@@ -34,7 +34,7 @@ class InterpreterVisitorTest extends AnyFunSuite {
   }
 
   test("Testing bee1161SomadeFatoriais") {
-    val module = ScalaParser.parseResource("stmts/bee1161_SomadeFatoriais.oberon")
+    val module = ScalaParser.parseResource("Grupo_06/bee1161_SomadeFatoriais.oberon")
     val interpreter = new Interpreter()
     assert(module.name == "bee1161SomadeFatoriais")
 
@@ -52,7 +52,7 @@ class InterpreterVisitorTest extends AnyFunSuite {
   }
 
   test("Testing interpreter on bee1161_SomadeFatoriais2 program") {
-    val module = ScalaParser.parseResource("stmts/bee1161_SomadeFatoriais2.oberon")
+    val module = ScalaParser.parseResource("Grupo_06/bee1161_SomadeFatoriais2.oberon")
 
     
     val interpreter = new Interpreter()
@@ -68,7 +68,7 @@ class InterpreterVisitorTest extends AnyFunSuite {
   }
 
   test(testName = "Beecrownd test of Weighted Averages 1161"){
-    val module = ScalaParser.parseResource("stmts/bee1161_SomadeFatoriais.oberon")
+    val module = ScalaParser.parseResource("Grupo_06/bee1161_SomadeFatoriais.oberon")
 
     val coreVisitor = new CoreVisitor()
     val coreModule = coreVisitor.transformModule(module)
@@ -84,7 +84,7 @@ class InterpreterVisitorTest extends AnyFunSuite {
   }
   
       test("Testing bee1088BolhasBaldes") {
-    val module = ScalaParser.parseResource("stmts/bee1088_BolhasBaldes.oberon")
+    val module = ScalaParser.parseResource("Grupo_06/bee1088_BolhasBaldes.oberon")
     val interpreter = new Interpreter()
     assert(module.name == "bee1088BolhasBaldes")
 
@@ -95,7 +95,7 @@ class InterpreterVisitorTest extends AnyFunSuite {
     assert(result.lookup("res") == Some("Marcelo"))
   }
     test("Testing bee1279") {
-    val module = ScalaParser.parseResource("stmts/bee1279.oberon")
+    val module = ScalaParser.parseResource("Grupo_06/bee1279.oberon")
     val interpreter = new Interpreter()
     assert(module.name == "bee1279")
 
